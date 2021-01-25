@@ -5,7 +5,6 @@ function editTextForLi() {
         const btn = editBtn[i];
         btn.addEventListener('click', function (event) {
             var editInput = event.target.previousElementSibling
-            console.log(editInput)
             if (editInput.value != '' && editInput.value.trim() != '') {
                 event.target.parentNode.parentNode.previousElementSibling.textContent = editInput.value
                 editInput.value = ''
@@ -50,14 +49,14 @@ removeItem()
 
 //new item add
 document.getElementById('submitBtn').addEventListener('click', newItemAdd)
-function newItemAdd(e) {
-    e.preventDefault()
+function newItemAdd(event) {
+    event.preventDefault()
     var userInput = document.getElementById('userText');
     var listItemsParent = document.getElementById('listItemParent')
     if (userInput.value != '' && userInput.value.trim() != '') {
         //create li element for new item list
         var newItem = document.createElement('li')
-        newItem.className = 'd-md-flex justify-content-between text-sm-center align-items-center list-group-item listDesign listItem';
+        newItem.className = 'd-md-flex justify-content-between text-center align-items-center list-group-item listDesign listItem';
         //create a element for li inner text
         var anchorTag = document.createElement('a')
         anchorTag.setAttribute('href', '#')
@@ -65,7 +64,7 @@ function newItemAdd(e) {
         anchorTag.textContent = `${userInput.value}`;
         //create div for input and button
         var mainDiv = document.createElement('div')
-        mainDiv.className = 'd-flex mt-3 mt-md-0 align-items-center justify-content-sm-center'
+        mainDiv.className = 'd-flex mt-3 mt-md-0 align-items-center justify-content-center'
         //create mainDiv in child div
         var childDiv = document.createElement('div')
         childDiv.className = 'd-none'
