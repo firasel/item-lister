@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>js Dom practice</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/d086cba1c1.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-light bg-secondary">
+                <div class="container">
+                    <a class="navbar-brand fs-2 m-auto text-white text-uppercase " href="#">Item Lister</a>
+                </div>
+            </nav>
+        </header>
+        <main class="container">
+            <section class="item-sec shadow">
+                <div class="m-4">
+                    <h3>Add Items</h3>
+                    <form class="row g-3">
+                        <div class="col-auto">
+                            <input type="text" class="form-control" id="userText" placeholder="write message...">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-success mb-3"
+                                id="submitBtn">Submit</button>
+                        </div>
+                    </form>
+                    <h3>Items</h3>
+                    <ul class="list-group" id="listItemParent">
+                        <li class="d-md-flex justify-content-between text-center align-items-center list-group-item listDesign listItem">
+                            <a class="text-decoration-none text-dark" href="#">Item-1</a>
+                            <div class="d-flex mt-3 mt-md-0 align-items-center justify-content-center">
+                                <div class="d-none">
+                                    <input class="form-control editInput"
+                                        placeholder="write your message"
+                                        type="text">
+                                    <button class="btn btn-outline-dark ms-3
+                                        editBtn">Ok</button>
+                                </div>
+                                <i class="fas fa-edit editIcon"></i>
+                                <button type="button" class="btn-close p-2 closeBtn" aria-label="Close"></button>
+                            </div>
+                        </li>
+                        <li class="d-md-flex justify-content-between text-center align-items-center list-group-item listDesign listItem">
+                            <a class="text-decoration-none text-dark" href="#">Item-2</a>
+                            <div class="d-flex mt-3 mt-md-0 align-items-center justify-content-center">
+                                <div class="d-none">
+                                    <input class="form-control editInput"
+                                        placeholder="write your message"
+                                        type="text">
+                                    <button class="btn btn-outline-dark ms-3
+                                        editBtn">Ok</button>
+                                </div>
+                                <i class="fas fa-edit editIcon"></i>
+                                <button type="button" class="btn-close p-2 closeBtn" aria-label="Close"></button>
+                            </div>
+                        </li>
+                        <li class="d-md-flex justify-content-between text-center align-items-center list-group-item listDesign listItem">
+                            <a class="text-decoration-none text-dark" href="#">Item-3</a>
+                            <div class="d-flex mt-3 mt-md-0 align-items-center justify-content-center">
+                                <div class="d-none">
+                                    <input class="form-control editInput"
+                                        placeholder="write your message"
+                                        type="text">
+                                    <button class="btn btn-outline-dark ms-3
+                                        editBtn">Ok</button>
+                                </div>
+                                <i class="fas fa-edit editIcon"></i>
+                                <button type="button" class="btn-close p-2 closeBtn" aria-label="Close"></button>
+                            </div>
+                        </li>
+                        <li class="d-md-flex justify-content-between text-center align-items-center list-group-item listDesign listItem">
+                            <a class="text-decoration-none text-dark" href="#">Item-4</a>
+                            <div class="d-flex mt-3 mt-md-0 align-items-center justify-content-center">
+                                <div class="d-none">
+                                    <input class="form-control editInput"
+                                        placeholder="write your message"
+                                        type="text">
+                                    <button class="btn btn-outline-dark ms-3 editBtn">Ok</button>
+                                </div>
+                                <i class="fas fa-edit editIcon"></i>
+                                <button type="button" class="btn-close p-2 closeBtn" aria-label="Close"></button>
+                            </div>
+                        </li>
+                        <li class="d-md-flex justify-content-between text-center align-items-center list-group-item listDesign listItem">
+                            <a class="text-decoration-none text-dark" href="#">Item-5</a>
+                            <div class="d-flex mt-3 mt-md-0 align-items-center justify-content-center">
+                                <div class="d-none">
+                                    <input class="form-control editInput"
+                                        placeholder="write your message"
+                                        type="text">
+                                    <button class="btn btn-outline-dark ms-3
+                                        editBtn">Ok</button>
+                                </div>
+                                <i class="fas fa-edit editIcon"></i>
+                                <button type="button" class="btn-close p-2 closeBtn" aria-label="Close"></button>
+                            </div>
+                        </li>
+                        <li class="d-md-flex justify-content-between text-center align-items-center list-group-item listDesign listItem">
+                            <a class="text-decoration-none text-dark" href="#">Item-6</a>
+                            <div class="d-flex mt-3 mt-md-0 align-items-center justify-content-center">
+                                <div class="d-none">
+                                    <input class="form-control editInput"
+                                        placeholder="write your message"
+                                        type="text">
+                                    <button class="btn btn-outline-dark ms-3
+                                        editBtn">Ok</button>
+                                </div>
+                                <i class="fas fa-edit editIcon"></i>
+                                <button type="button" class="btn-close p-2 closeBtn" aria-label="Close"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <script src="main.js"></script>
+        <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

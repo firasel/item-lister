@@ -1,0 +1,23 @@
+.item-sec{
+    border: 2px solid rgb(199, 199, 199);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px;
+}
+.listDesign{
+    cursor: pointer;
+}
+.listDesign:nth-child(2n){
+    background: rgb(209, 209, 209);
+}
+.editIcon{
+    font-size: 30px;
+    padding: 5px;
+}
+.editInputPlaceholder::placeholder{
+    color:red !important;
+}
+
